@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "2f8cdfc5-f9e7-4980-a8ff-7a7ce0fe6cbd",
+		"name": "AirbnbCore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepe\",\r\n    \"email\":\"Pepe@Pepe.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\": \"Ramon\",\r\n    \"email\": \"ramon@ramon.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Listing",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Listings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Listing By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Listing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Black Raven\",\r\n    \"description\": \"Morbi porttitor lorem id ligula. Suspendisse ornare consequ\",\r\n    \"adults\": 3,\r\n    \"children\": 2,\r\n    \"isPetsAllowed\": true,\r\n    \"basePrice\": 195.62,\r\n    \"cleaningFee\": 95.82,\r\n    \"imageUrl\": \"http://dummyimage.com/126x173.bmp/cc0000/ffffff\",\r\n    \"weeklyDiscount\": 0.77,\r\n    \"monthlyDiscount\": 0.61\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Listing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"Juan Raven\",\r\n    \"slug\": null,\r\n    \"description\": \"Morbi porttitor lorem id ligula. Suspendisse ornare consequ\",\r\n    \"adults\": 3,\r\n    \"children\": 2,\r\n    \"isPetsAllowed\": true,\r\n    \"basePrice\": 195.62,\r\n    \"cleaningFee\": 95.82,\r\n    \"imageUrl\": \"http://dummyimage.com/126x173.bmp/cc0000/ffffff\",\r\n    \"weeklyDiscount\": 0.77,\r\n    \"monthlyDiscount\": 0.61,\r\n    \"specialPricesDTO\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Listing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Special Price By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/6/special-prices/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"6",
+								"special-prices",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Special Price",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2021-12-05\",\r\n    \"price\": 8.9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/6/special-prices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"6",
+								"special-prices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Special Price",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/1/special-prices/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"1",
+								"special-prices",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"checkin\":\"2021-12-05\",\r\n    \"checkout\":\"2021-12-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/airbnb/api/v1/microservices/listings/1/special-prices/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"airbnb",
+								"api",
+								"v1",
+								"microservices",
+								"listings",
+								"1",
+								"special-prices",
+								"checkout"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
